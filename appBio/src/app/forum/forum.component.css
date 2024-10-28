@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+/* Estilos para el formulario */
+.form-group label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 10px;
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para las preguntas */
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Estilos para las respuestas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+}
+
+/* Caja de respuesta */
+textarea {
+  resize: none;
+}

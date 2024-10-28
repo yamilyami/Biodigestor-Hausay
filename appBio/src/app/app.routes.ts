@@ -1,43 +1,26 @@
-
-/*import { Component } from '@angular/core';
-import { Routes } from '@angular/router';
-import { RegistroComponent } from './registro/registro.component';
-
-import { AceptarTerminosComponent } from './aceptar-terminos/aceptar-terminos.component';
-import { RestablecerContrasenaComponent } from './restablecer-contrasena/restablecer-contrasena.component'; 
-
-import { QuienessomosComponent } from './QuienesSomos/quienessomos/quienessomos.component';
-import path from 'node:path';
-/* import { FormulaRegistroComponent } from './registro/formula-registro/formula-registro.component';
-
-//export const routes: Routes = [];*/
-
-// app.routes.ts
-import { Routes } from '@angular/router';
-import { RegistroComponent } from './registro/registro.component';
-import { AceptarTerminosComponent } from './aceptar-terminos/aceptar-terminos.component';
-
-
-export const routes: Routes = [
-  { path: 'registro', component: RegistroComponent },
-  { path: 'aceptar-terminos', component: AceptarTerminosComponent },
-  { path: '', redirectTo: '/registro', pathMatch: 'full' }, // Ruta por defecto
-];
-
-
-
-import { Component } from '@angular/core';
-import path from 'node:path';
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';// Asegúrate de incluir esta línea
+import { RouterModule, Routes } from '@angular/router';
 import { Registro01Component } from './registro01/registro01/registro01.component';
 import { QuienesSOmos01Component } from './QuienesSomos/quienes-somos01/quienes-somos01.component';
 import { HomePageComponent } from './shared/home-page/home-page.component';
+import { LoginComponent } from './login/login.component';
+import { ForumComponent } from './forum/forum.component';
 
-
+// Exportamos las rutas
 export const routes: Routes = [
-  { path: "", component: HomePageComponent },
-  { path: "formulario", component: Registro01Component },
-  { path: "registro", component: Registro01Component },
-  { path: "somos", component: QuienesSOmos01Component }
+  { path: '', component: HomePageComponent },  // Ruta por defecto
+  { path: 'homePrincipal', component: HomePageComponent },
+  { path: 'formularioRegistro', component: Registro01Component },
+  { path: 'registro', component: Registro01Component },
+  { path: 'QuienesSomos', component: QuienesSOmos01Component },
+  { path: 'ingresar', component: LoginComponent },
+  { path: 'inicio', component: HomePageComponent },
+  { path: 'forum', component: ForumComponent },
+  { path: '**', redirectTo: '' }  // Ruta para redireccionar si no encuentra una ruta
 ];
 
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],  // Configura el router
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
