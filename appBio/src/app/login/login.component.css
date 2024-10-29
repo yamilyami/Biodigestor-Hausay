@@ -51,6 +51,7 @@ h2 {
 
 .text-muted {
   color: #e0e0e0 !important;
+  cursor: pointer;
 }
 
 .text-white {
