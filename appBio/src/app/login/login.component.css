@@ -1,0 +1,66 @@
+/* Fondo completo con la imagen */
+.login-container {
+  background-image: url('/hero.jpg'); /* Ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Efecto borroso y transparente en la tarjeta */
+.login-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  min-width: 400px;  /* Ancho mínimo para evitar que sea demasiado pequeño */
+  max-width: 600px;  /* Aumenta el tamaño máximo del contenedor */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra para darle más profundidad */
+}
+
+/* Ajuste de los elementos */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem; /* Tamaño más grande del título */
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #037128;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #28a745;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-size: 1.1rem; /* Aumentar el tamaño del botón */
+}
+
+.text-muted {
+  color: #e0e0e0 !important;
+}
+
+.text-white {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    padding: 20px;
+    max-width: 90%; /* Hacer que se ajuste mejor a pantallas más pequeñas */
+    min-width: 300px; /* Limitar el ancho mínimo en pantallas pequeñas */
+  }
+}

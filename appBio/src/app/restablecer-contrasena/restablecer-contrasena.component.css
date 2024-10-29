@@ -1,0 +1,66 @@
+/* Fondo completo de la página, si lo deseas dentro del modal */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que el modal esté centrado verticalmente */
+  }
+  
+  .modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra para darle más profundidad */
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño del modal */
+  }
+  
+  .modal-header h5 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .modal-body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  .form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    margin-bottom: 10px; /* Espacio debajo del campo de texto */
+  }
+  
+  .form-control::placeholder {
+    color: #037128;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #28a745;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1.1rem;
+    margin-top: 20px; /* Añade un margen superior para separar el botón */
+  }
+  
+  .alert-danger {
+    background-color: rgba(255, 0, 0, 0.5); /* Ajusta el color del mensaje de error */
+    color: #fff;
+  }
+  
+  /* Ajuste del modal para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 20px;
+      max-width: 90%; /* Ajusta el modal para pantallas pequeñas */
+      min-width: 300px;
+    }
+  }
+  

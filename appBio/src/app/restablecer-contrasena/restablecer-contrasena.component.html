@@ -1,1 +1,20 @@
-<p>restablecer-contrasena works!</p>
+<div class="modal fade" id="passwordResetModal" tabindex="-1" aria-labelledby="passwordResetModalLabel" aria-hidden="true" [ngClass]="{'show': isModalOpen}" [style.display]="isModalOpen ? 'block' : 'none'">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="passwordResetModalLabel">Restablecer Contraseña</h5>
+        <button type="button" class="btn-close" (click)="ventanaEmergenteService.cerrarVentanaEmergente()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="checkEmail()">
+          <div class="form-group">
+            <label for="resetEmail">Escriba su correo electrónico:</label>
+            <input type="email" id="resetEmail" class="form-control" [(ngModel)]="resetEmail" name="resetEmail" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Comprobar</button>
+        </form>
+        <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+      </div>
+    </div>
+  </div>
+</div>

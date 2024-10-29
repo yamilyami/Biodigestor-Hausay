@@ -1,1 +1,58 @@
-<p>registro works!</p>
+<div class="container-fluid mt-5 position-relative"> <!-- Cambiado a container-fluid -->
+    <img src="con_lamparita.jpeg" alt="imagen fondo registro" style="width: 100%; height: auto;">
+    <div class="row justify-content-center position-absolute" style="top: 25%; left: 20%;">
+        <div class="col-md-12 col-lg-12">  <!-- Puedes ajustar esto si es necesario -->
+            <div class="card shadow-sm" style="background-color: rgba(255, 255, 255, 0.2);">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Registro</h2>
+                    <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                class="form-control"
+                                placeholder="Ingrese su nombre"
+                                [(ngModel)]="usuario.nombre"
+                                name="nombre"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Ingrese su email"
+                                [(ngModel)]="usuario.email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input
+                                type="password"
+                                id="contrasena"
+                                class="form-control"
+                                placeholder="Ingrese su contraseña"
+                                [(ngModel)]="usuario.contrasena"
+                                name="contrasena"
+                                required
+                            />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mt-3" [disabled]="!registroForm.form.valid">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
