@@ -11,13 +11,15 @@ import { Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+  
 export class LoginComponent {
   loginForm: FormGroup;  // formulario reactivo
   
   constructor(
     private router: Router,
     private formBuilder: FormBuilder, 
-    public ventanaEmergenteService: VentanaEmergenteService
+    public ventanaEmergenteService: VentanaEmergenteService,
+    private router: Router
   ) {
     //  mail y password para el validator
     this.loginForm = this.formBuilder.group({
@@ -28,6 +30,10 @@ export class LoginComponent {
 
   abrirVentanaEmergentePassword() {
     this.ventanaEmergenteService.abrirVentanaEmergente();
+  }
+
+  abrirRegistro() {
+    this.router.navigate(['/registro']);
   }
 
   // envío del formulario
