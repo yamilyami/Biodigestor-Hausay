@@ -3,34 +3,32 @@
     <div class="col-md-4">
       <div class="card p-4 shadow-lg login-card">
         <h2 class="text-center text-success mb-4">Iniciar sesión</h2>
-        <form>
-          <div class="form-group mb-3">
-            <label for="usuario" class="text-white">Usuario</label>
-            <input
-              type="text"
-              id="usuario"
-              class="form-control"
-              placeholder="Ingrese su usuario"
-              required
-            />
+
+        <!-- Formulario de inicio de sesión -->
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">    
+          <div class="m-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input 
+              type="email" 
+              class="form-control" 
+              formControlName="mail" 
+              id="exampleInputEmail1"
+              placeholder="Ingrese su correo electrónico">
           </div>
-          <div class="form-group mb-4">
-            <label for="password" class="text-white">Contraseña</label>
-            <input
-              type="password"
-              id="password"
-              class="form-control"
-              placeholder="Ingrese su contraseña"
-              required
-            />
+          
+          <div class="m-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input 
+              type="password" 
+              class="form-control" 
+              formControlName="password" 
+              id="exampleInputPassword1"
+              placeholder="Ingrese su contraseña">
           </div>
-          <button type="submit" class="btn btn-success btn-block">Ingresar</button>
-          <div class="d-flex justify-content-between mt-3">
-            <button type="button" class="btn btn-link mt-3" (click)="abrirVentanaEmergentePassword()">Olvidaste tu contraseña?</button>
-            <a href="#" class="text-muted">Quiero registrarme</a>
+        
+          <div class="m-3">
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
           </div>
         </form>
-      </div>
-    </div>
-  </div>
-</div>
+        
+        

@@ -6,6 +6,6 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './nadvar.component.html',
-  styleUrl: './nadvar.component.css'
+ // styleUrl: './nadvar.component.css'
 })
 export class NadvarComponent {}

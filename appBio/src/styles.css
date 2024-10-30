@@ -1,4 +1,356 @@
+ 69-tk-revisar-el-estilo-visual
+
+
+
+
+/* HERO */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que el modal esté centrado verticalmente */
+  }
+  
+  .modal-content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Sombra para darle más profundidad */
+    width: 100%;
+    max-width: 600px; /* Ajusta el tamaño del modal */
+  }
+  
+  .modal-header h5 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .modal-body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+  
+  .form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    margin-bottom: 10px; /* Espacio debajo del campo de texto */
+  }
+  
+  .form-control::placeholder {
+    color: #037128;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #28a745;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1.1rem;
+    margin-top: 20px; /* Añade un margen superior para separar el botón */
+  }
+  
+  .alert-danger {
+    background-color: rgba(255, 0, 0, 0.5); /* Ajusta el color del mensaje de error */
+    color: #fff;
+  }
+  
+  /* Ajuste del modal para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 20px;
+      max-width: 90%; /* Ajusta el modal para pantallas pequeñas */
+      min-width: 300px;
+    }
+  }
+  
+/*nadvar*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .navbar-brand img {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.37);
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #1f8a19;
+    text-shadow: none;
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-us-container {
+    max-width: 1200px; /* Se aumenta el ancho máximo */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff9a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #6dd133;
+  }
+  
+  .about-us-content, .team-section, .values-section {
+    margin-bottom: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Estilos del equipo */
+  .team-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap; /* Ahora los elementos se ajustarán en varias filas */
+    justify-content: space-between;
+  }
+  
+  .team-member {
+    text-align: center;
+    flex-basis: 30%; /* Cada miembro del equipo ocupa el 30% del ancho */
+    margin-bottom: 30px; /* Espacio entre filas */
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Estilos de los valores */
+  .values-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .values-section ul li {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  /* Botón de volver */
+  .back-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .back-button button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    position: fixed; /* Hace que el footer esté siempre en una posición fija */
+    bottom: 0; /* Posiciona el footer en la parte inferior de la ventana */
+    left: 0; /* Alinea el footer con el lado izquierdo */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    z-index: 10; /* Asegura que el footer esté por encima de otros elementos */
+    font-size: 0.3rem;
+    font-family: 'Arial', sans-serif;
+ 
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  /*principal*/
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+  }
+  
+  p.hero-title {
+    font-size: 2rem;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  }
+  
+  .hero-subtitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-title span {
+    color: #00ff00;
+    font-weight: bold;
+  }
+  
+  /* CARDS */
+  .title-cards-elegirnos {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #045410;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.377);
+  }
+  
+  .card {
+    background: #389B33;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.377);
+    border: none;
+  }
+  
+  .card-header {
+    border-bottom: none;
+  }
+  
+  .card-title {
+    color: #292626;
+  }
+  
+  .card-text {
+    color: #FFF;
+  }
+  
+  .logo-medio-ambiente {
+    width: 4rem;
+  }
+  
+  /* CLIENTS SECTION */
+  .img-clients {
+    width: 20rem;
+  }
+  
+  .img-about-us {
+    width: 25rem;
+  }
+  
+  /* COLOR Y ESTILO DE PALABRAS DESTACADAS */
+  span {
+    color: #1ca814;
+    font-weight: bolder;
+  }
+  
+  .btn {
+    background: #1ca814;
+    color: #FFF;
+  }
+  
+  /* Diseño para responsivo */
+  @media (width <=768px) {
+    p.hero-title {
+      font-size: 1.4rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.7rem;
+    }
+  
+    .title-cards-elegirnos {
+      font-size: 2.2rem;
+    }
+  
+    .container-clients {
+      text-align: center;
+    }
+  
+    .img-clients {
+      width: 15rem;
+    }
+  
+    .body-clients {
+      margin-top: 1rem;
+    }
+  
+    .container-about-us {
+      text-align: center;
+    }
+  }
+  
+=======
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ develop

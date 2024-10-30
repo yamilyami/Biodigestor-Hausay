@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 
   imports: [CommonModule, FormsModule],
   templateUrl: './restablecer-contrasena.component.html',
-  styleUrls: ['./restablecer-contrasena.component.css']
+ // styleUrls: ['./restablecer-contrasena.component.css']
 })
 export class RestablecerContrasenaComponent {
   email: string = '';
