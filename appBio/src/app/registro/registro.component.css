@@ -9,10 +9,14 @@
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.212); /* Fondo del card semitransparente */
+  background-color: rgba(255, 255, 255, 0.212);
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
-  padding: 30px; /* Agregar espacio interno */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  min-width: 18rem;
+  max-width: 33rem;
+  width: 100%;
 }
 
 .card-title {

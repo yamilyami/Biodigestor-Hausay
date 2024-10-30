@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { VentanaEmergenteService } from '../servicios/ventana-emergente.service';
 import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],  // Aquí puedes agregar módulos necesarios si los hay
+  imports: [RouterLink],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']  // Asegúrate de usar 'styleUrls' en lugar de 'styleUrl'
 })
