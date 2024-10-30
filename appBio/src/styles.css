@@ -28,14 +28,14 @@
   }
 
   .form-control {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgb(247, 247, 247);
     border: none;
     color: #fff;
     margin-bottom: 10px; /* Espacio debajo del campo de texto */
   }
 
   .form-control::placeholder {
-    color: #037128;
+    color: #000000;
   }
 
   .form-control:focus {
