@@ -1,0 +1,23 @@
+<div class="container-historial-pagos d-flex flex-column">
+  <div class="container-title">
+    <h2>Historial de Pagos</h2>
+  </div>
+  <div class="form-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha</mat-label>
+      <input matInput [(ngModel)]="fechaSeleccionada" type="date" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Estado</mat-label>
+      <mat-select [(ngModel)]="estadoSeleccionado">
+        <mat-option value="aprobado">Aprobado</mat-option>
+        <mat-option value="pendiente">Pendiente</mat-option>
+        <mat-option value="rechazado">Rechazado</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="filtrarPagos()">Filtrar Pagos</button>
+    <button mat-button (click)="obtenerTodos()">Mostrar Todos</button>
+  </div>
+</div>

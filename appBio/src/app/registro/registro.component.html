@@ -1,1 +1,51 @@
-<p>registro works!</p>
+<div class="container-fluid position-relative" style="height: 100vh;">
+  <img src="/con_lamparita.jpeg" alt="imagen fondo registro" class="img-fondo">
+  <div class="d-flex justify-content-start align-items-center h-100 p-3 p-md-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">Registro</h2>
+        <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              class="form-control"
+              placeholder="Ingrese su nombre"
+              [(ngModel)]="usuario.nombre"
+              name="nombre"
+              required
+            />
+          </div>
+          <div class="form-group mt-2">
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Ingrese su email"
+              [(ngModel)]="usuario.email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group mt-2">
+            <label for="contrasena">Contraseña</label>
+            <input
+              type="password"
+              id="contrasena"
+              class="form-control"
+              placeholder="Ingrese su contraseña"
+              [(ngModel)]="usuario.contrasena"
+              name="contrasena"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mt-3" [disabled]="!registroForm.form.valid">
+            Registrarse
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

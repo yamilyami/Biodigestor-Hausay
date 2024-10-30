@@ -1,29 +1,27 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Registro01Component } from './registro01/registro01/registro01.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { NadvarComponent } from './shared/nadvar/nadvar.component';
 import { HomePageComponent } from './shared/home-page/home-page.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { LoginComponent } from "./login/login.component";
+import { RegistroComponent } from "./registro/registro.component";
+import { AceptarTerminosComponent } from "./aceptar-terminos/aceptar-terminos.component";
 import { RestablecerContrasenaComponent } from './restablecer-contrasena/restablecer-contrasena.component';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashBoardComponent } from './Dash/dash-board/dash-board.component';
-
+import { LoginComponent } from "./login/login.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NadvarComponent, HomePageComponent, 
-            FooterComponent, LoginComponent, RestablecerContrasenaComponent, 
-            Registro01Component, ReactiveFormsModule,DashBoardComponent
-          ],
+  imports: [RouterOutlet, NadvarComponent, HomePageComponent,
+            FooterComponent, LoginComponent, RestablecerContrasenaComponent,
+            RegistroComponent, ReactiveFormsModule, DashBoardComponent, AceptarTerminosComponent, CommonModule],
   templateUrl: './app.component.html',
- // styleUrl: './app.component.css'
- styleUrls: ['assets/css/style.css'] 
-
+  styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'appBio';
 }
+

@@ -1,1 +1,25 @@
-<p>aceptar-terminos works!</p>
+<div class="container-fluid position-relative">
+  <img src="con_lamparita.jpeg" alt="imagen fondo login" class="img-fondo">
+  <div class="row align-items-center p-3 p-md-5">
+    <div class="col-10 col-md-6 col-lg-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">Aceptar Términos y Condiciones</h3>
+          <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+            <div class="form-group">
+              <small class="card-text color-white">
+                Al registrarte, aceptas nuestros términos y condiciones de uso, así como nuestra política de privacidad.
+                Te recomendamos leer detenidamente estos documentos antes de continuar.
+              </small>
+              <input type="checkbox" id="aceptar-terminos" class="form-check-input" ngModel name="aceptar-terminos" required>
+              <label class="mt-1" for="aceptar-terminos">Aceptar términos y condiciones</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block mt-3" [disabled]="!loginForm.form.valid">
+              Aceptar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
