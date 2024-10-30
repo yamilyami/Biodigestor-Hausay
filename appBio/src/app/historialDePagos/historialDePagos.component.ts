@@ -21,9 +21,13 @@ import { MatButtonModule } from '@angular/material/button'; // Para botones
   styleUrls: ['./historialDePagos.component.css']
 })
 export class HistorialDePagosComponent {
+  ngOnInit() {
+    throw new Error('Method not implemented.');
+  }
   // Inicializa las propiedades
   fechaSeleccionada: string = ''; // Inicializa como cadena vacía
   estadoSeleccionado: string = ''; // Inicializa como cadena vacía
+  pagos: any;
 
   filtrarPagos() {
     // Tu lógica de filtrado aquí
