@@ -117,12 +117,6 @@ body {
     margin-bottom: 30px;
   }
 
-  p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    text-align: justify;
-  }
 
   /* Estilos del equipo */
   .team-section h2 {
@@ -196,32 +190,7 @@ body {
   }
 
   /* Footer */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 0px;
-    text-align: center;
-    position: fixed; /* Hace que el footer esté siempre en una posición fija */
-    bottom: 0; /* Posiciona el footer en la parte inferior de la ventana */
-    left: 0; /* Alinea el footer con el lado izquierdo */
-    width: 100%; /* Asegura que el footer ocupe todo el ancho */
-    z-index: 10; /* Asegura que el footer esté por encima de otros elementos */
-    font-size: 0.3rem;
-    font-family: 'Arial', sans-serif;
 
-    margin: 0;
-    padding: 0;
-  }
-
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0px;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
   /*principal*/
 .hero-container {
     position: relative;
