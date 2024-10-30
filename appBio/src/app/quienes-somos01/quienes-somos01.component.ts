@@ -11,8 +11,7 @@ export class QuienesSOmos01Component {
   constructor(private router: Router) {}
 
   goBack(): void {
-    this.router.navigate(['/ruta-anterior']); // Cambia '/ruta-anterior' por la ruta correcta
-    //página anterior del historial window.history.back();
+    this.router.navigate(['']);
   }
 
 }
