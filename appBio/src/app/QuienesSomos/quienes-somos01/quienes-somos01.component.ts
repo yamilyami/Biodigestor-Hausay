@@ -4,14 +4,14 @@ import { Router } from '@angular/router';
   selector: 'app-quienes-somos01',
   standalone: true,
   imports: [],
-  templateUrl: './quienes-somos01.component.html'
+  templateUrl: './quienes-somos01.component.html',
+  styleUrl: './quienes-somos01.component.css'
 })
 export class QuienesSOmos01Component {
   constructor(private router: Router) {}
 
   goBack(): void {
-    this.router.navigate(['/ruta-anterior']); // Cambia '/ruta-anterior' por la ruta correcta
-    //página anterior del historial window.history.back();
+    this.router.navigate(['']);
   }
 
 }
