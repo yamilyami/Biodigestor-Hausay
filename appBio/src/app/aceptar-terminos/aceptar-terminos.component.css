@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Color de fondo suave */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Quita el margen por defecto */
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 30px; /* Espaciado interno */
+    width: 100%; /* Ancho del contenedor */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+}
+
+label {
+    color: #000000; /* Color negro para las etiquetas */
+    font-size: 1rem; /* Tamaño de fuente */
+    display: block; /* Hace que la etiqueta ocupe toda la línea */
+    font-weight: bold; /* Aumenta el peso de la fuente */
+}
+
+.form-text {
+    color: #000; /* Asegura que el texto sea negro */
+    font-weight: bold; /* Aumenta el peso de la fuente */
+}
+
+.form-control {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espacio entre la etiqueta y el input */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.form-control:focus {
+    border-color: #28a745; /* Color del borde al enfocar */
+    outline: none; /* Quita el contorno por defecto */
+}
+
+#aceptar-terminos {
+    margin-right: 10px; /* Espacio entre la casilla y la etiqueta */
+}
+
+.btn {
+    background-color: #28a745; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el botón */
+}
+
+.btn:hover {
+    background-color: #218838; /* Color del botón al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        padding: 20px; /* Ajusta el espaciado en pantallas más pequeñas */
+    }
+}
+
+
+
+
+  
+

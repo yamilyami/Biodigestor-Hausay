@@ -1,0 +1,439 @@
+.quienessomos-child {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 798.5px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    background: radial-gradient(50% 50% at 50% 50%, #92ca4e, #486427);
+    width: 1593px;
+    height: 96px;
+}
+.quienes-somos {
+    position: absolute;
+    top: calc(50% - 1054.5px);
+    left: calc(50% - 132.5px);
+    font-size: 32px;
+    line-height: 140%;
+    color: #fff;
+}
+.resea-historica-del {
+    position: absolute;
+    top: 178px;
+    left: 338px;
+    font-size: 32px;
+    line-height: 140%;
+    display: inline-block;
+    width: 938px;
+}
+.text {
+    position: absolute;
+    top: 380px;
+    left: 289px;
+    font-size: 32px;
+    line-height: 36px;
+    font-family: Roboto;
+    text-align: center;
+}
+.fue-fundado-gracias {
+    position: absolute;
+    top: 275px;
+    left: 74px;
+    font-family: Inter;
+    color: #292626;
+    display: inline-block;
+    width: 1416px;
+    height: 54px;
+}
+.p {
+    margin: 0;
+}
+.en-1986-se {
+    margin: 0;
+    white-space: pre-wrap;
+}
+.inicio-1986-container {
+    position: absolute;
+    top: 378px;
+    left: calc(50% - 660.5px);
+    font-family: Roboto;
+    color: #292626;
+    text-align: center;
+    display: inline-block;
+    width: 1169px;
+    height: 190px;
+}
+.tecnicatura-superior-en {
+    position: absolute;
+    top: 765px;
+    left: 1008px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 388px;
+    height: 34px;
+}
+.tecnicatura-superior-en1 {
+    position: absolute;
+    top: 722px;
+    left: 888px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 602px;
+    height: 38px;
+}
+.tecnicatura-superior-en2 {
+    position: absolute;
+    top: 806px;
+    left: 993px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 449px;
+    height: 33px;
+}
+.quienessomos-item {
+    position: absolute;
+    top: 1314px;
+    left: 72px;
+    width: 200px;
+    height: 150px;
+}
+.nombre {
+    position: absolute;
+    top: 1341px;
+    left: 78px;
+    line-height: 140%;
+}
+.apellido {
+    position: absolute;
+    top: 1378px;
+    left: 72px;
+    line-height: 140%;
+}
+.quienessomos-inner {
+    position: absolute;
+    top: 1954px;
+    left: 867px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.rectangle-div {
+    position: absolute;
+    top: 1940px;
+    left: 453px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child1 {
+    position: absolute;
+    top: 1674px;
+    left: 870px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child2 {
+    position: absolute;
+    top: 1945px;
+    left: 72px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child3 {
+    position: absolute;
+    top: 1336px;
+    left: 1249px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child4 {
+    position: absolute;
+    top: 1651px;
+    left: 440px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child5 {
+    position: absolute;
+    top: 1635px;
+    left: 72px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.quienessomos-child6 {
+    position: absolute;
+    top: 1694px;
+    left: 1249px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.rectangle-icon {
+    position: absolute;
+    top: 1328px;
+    left: 869px;
+    width: 200px;
+    height: 150px;
+}
+.tecnicatura-superior-en3 {
+    position: absolute;
+    top: 849px;
+    left: 964px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    white-space: pre-wrap;
+    text-align: center;
+    width: 467px;
+    height: 37px;
+}
+.tecnicatura-superior-en4 {
+    position: absolute;
+    top: 891px;
+    left: 1001px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 398px;
+    height: 38px;
+}
+.profesorado-en-educacin {
+    position: absolute;
+    top: 666px;
+    left: 970px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 505px;
+    height: 42px;
+}
+.profesorado-en-educacin1 {
+    position: absolute;
+    top: 936px;
+    left: 969px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    width: 543px;
+    height: 45px;
+}
+.quienessomos-child7 {
+    position: absolute;
+    top: 1008px;
+    left: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    background: radial-gradient(50% 50% at 50% 50%, #92ca4e, #486427);
+    width: 1593px;
+    height: 98px;
+}
+.colaboradores {
+    position: absolute;
+    top: calc(50% - 46.5px);
+    left: calc(50% - 136.5px);
+    font-size: 32px;
+    line-height: 140%;
+    color: #fff;
+    display: inline-block;
+    width: 273px;
+    height: 47px;
+}
+.nombre1 {
+    position: absolute;
+    top: 1361px;
+    left: 896px;
+    line-height: 140%;
+}
+.nombre2 {
+    position: absolute;
+    top: 1971px;
+    left: 469px;
+    line-height: 140%;
+}
+.nombre3 {
+    position: absolute;
+    top: 1660px;
+    left: 78px;
+    line-height: 140%;
+}
+.nombre4 {
+    position: absolute;
+    top: 1683px;
+    left: 454px;
+    line-height: 140%;
+}
+.nombre5 {
+    position: absolute;
+    top: 1694px;
+    left: 888px;
+    line-height: 140%;
+}
+.nombre6 {
+    position: absolute;
+    top: 1370px;
+    left: 1278px;
+    line-height: 140%;
+}
+.nombre7 {
+    position: absolute;
+    top: 1968px;
+    left: 80px;
+    line-height: 140%;
+}
+.nombre8 {
+    position: absolute;
+    top: 1993px;
+    left: 905px;
+    line-height: 140%;
+}
+.apellido1 {
+    position: absolute;
+    top: 1407px;
+    left: 889px;
+    line-height: 140%;
+}
+.apellido2 {
+    position: absolute;
+    top: 2009px;
+    left: 469px;
+    line-height: 140%;
+    display: inline-block;
+    width: 62px;
+    height: 22px;
+}
+.apellido3 {
+    position: absolute;
+    top: 1688px;
+    left: 78px;
+    line-height: 140%;
+}
+.apellido4 {
+    position: absolute;
+    top: 2017px;
+    left: 889px;
+    line-height: 140%;
+}
+.apellido5 {
+    position: absolute;
+    top: 1769px;
+    left: 1244px;
+    line-height: 140%;
+}
+.apellido6 {
+    position: absolute;
+    top: 1998px;
+    left: 80px;
+    line-height: 140%;
+}
+.apellido7 {
+    position: absolute;
+    top: 1725px;
+    left: 452px;
+    line-height: 140%;
+}
+.apellido8 {
+    position: absolute;
+    top: 1744px;
+    left: 889px;
+    line-height: 140%;
+}
+.apellido9 {
+    position: absolute;
+    top: 1436px;
+    left: 1275px;
+    line-height: 140%;
+    display: inline-block;
+    width: 62px;
+    height: 14px;
+}
+.quienessomos-child8 {
+    position: absolute;
+    top: 1317px;
+    left: 440px;
+    background-color: #d9d9d9;
+    width: 200px;
+    height: 150px;
+}
+.nombre9 {
+    position: absolute;
+    top: 1356px;
+    left: 440px;
+    line-height: 140%;
+}
+.apellido10 {
+    position: absolute;
+    top: 1402.73px;
+    left: 453.1px;
+    line-height: 140%;
+    transform:  rotate(0.5deg);
+    transform-origin: 0 0;
+}
+.nombre10 {
+    position: absolute;
+    top: 1724px;
+    left: 1249px;
+    line-height: 140%;
+}
+.logo-instituto-1-icon {
+    position: absolute;
+    top: 115px;
+    left: 52px;
+    width: 122px;
+    height: 141px;
+    object-fit: cover;
+}
+.portada-instituto-1-icon {
+    position: absolute;
+    top: 588px;
+    left: 241px;
+    width: 710px;
+    height: 400px;
+    object-fit: cover;
+}
+.carreras-que-se {
+    position: absolute;
+    top: 588px;
+    left: 1025px;
+    font-size: 24px;
+    line-height: 140%;
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 472px;
+}
+.quienessomos {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 6px 6px #486427 inset;
+    background-color: #fff;
+    height: 2159px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: 'Abril Fatface';
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+

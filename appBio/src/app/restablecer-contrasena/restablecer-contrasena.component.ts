@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { VentanaEmergenteService } from '../servicios/ventana-emergente.service';
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-restablecer-contrasena',
   standalone: true,

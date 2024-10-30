@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  justify-content: center; /* Mantiene el contenido centrado en el eje horizontal */
+  align-items: center; /* Alinea verticalmente el contenido en el centro */
+  height: 100vh; /* Asegúrate de que ocupa toda la pantalla */
+  background-image: url('../../imange/con_lamparita.jpeg'); /* Ruta correcta de tu imagen */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center;
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+.container-historial-pagos {
+  display: flex;
+  flex-direction: column; /* Coloca el título y el formulario en columna */
+  align-items: center; /* Mantiene el contenido centrado horizontalmente */
+  margin-left: -400px; /* Espacio negativo para mover el contenedor hacia la izquierda */
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el formulario */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px; /* Ancho del formulario */
+}
+
+/* Estilo para separar los inputs */
+.mat-form-field {
+  margin-bottom: 20px; /* Espacio entre los inputs */
+  width: 100%; /* Hace que los inputs ocupen todo el ancho del contenedor */
+}

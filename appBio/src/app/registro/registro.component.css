@@ -1,0 +1,29 @@
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo del card semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    padding: 30px; /* Agregar espacio interno */
+}
+
+.card-title {
+    margin-bottom: 20px; /* Espaciado adicional */
+}
+
+.btn {
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #038412; /* Color más oscuro al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+  
+  
