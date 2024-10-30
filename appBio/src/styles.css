@@ -64,34 +64,6 @@
     }
   }
 
-/*nadvar*/
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(10px);
-  }
-
-  .navbar-brand img {
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-  }
-
-  .navbar-nav .nav-link {
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.37);
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #1f8a19;
-    text-shadow: none;
-  }
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -106,11 +78,6 @@ body {
     background-color: #ffffff9a;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-
-  h1, h2 {
-    text-align: center;
-    color: #6dd133;
   }
 
   .about-us-content, .team-section, .values-section {
@@ -189,128 +156,7 @@ body {
     background-color: #c82333;
   }
 
-  /* Footer */
 
-  /*principal*/
-.hero-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hero-text {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-  }
-
-  p.hero-title {
-    font-size: 2rem;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-  }
-
-  .hero-subtitle {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  }
-
-  .hero-title span {
-    color: #00ff00;
-    font-weight: bold;
-  }
-
-  /* CARDS */
-  .title-cards-elegirnos {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #045410;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.377);
-  }
-
-  .card {
-    background: #389B33;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.377);
-    border: none;
-  }
-
-  .card-header {
-    border-bottom: none;
-  }
-
-  .card-title {
-    color: #292626;
-  }
-
-  .card-text {
-    color: #FFF;
-  }
-
-  .logo-medio-ambiente {
-    width: 4rem;
-  }
-
-  /* CLIENTS SECTION */
-  .img-clients {
-    width: 20rem;
-  }
-
-  .img-about-us {
-    width: 25rem;
-  }
-
-  /* COLOR Y ESTILO DE PALABRAS DESTACADAS */
-  span {
-    color: #1ca814;
-    font-weight: bolder;
-  }
-
-  .btn {
-    background: #1ca814;
-    color: #FFF;
-  }
-
-  /* Diseño para responsivo */
-  @media (width <=768px) {
-    p.hero-title {
-      font-size: 1.4rem;
-    }
-
-    .hero-subtitle {
-      font-size: 1.7rem;
-    }
-
-    .title-cards-elegirnos {
-      font-size: 2.2rem;
-    }
-
-    .container-clients {
-      text-align: center;
-    }
-
-    .img-clients {
-      width: 15rem;
-    }
-
-    .body-clients {
-      margin-top: 1rem;
-    }
-
-    .container-about-us {
-      text-align: center;
-    }
-  }
 
 
 /* You can add global styles to this file, and also import other style files */
