@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { QuienessomosComponent } from "./QuienesSomos/quienessomos/quienessomos.component";
 import { LoginComponent } from "./login/login.component";
 import { CommonModule } from '@angular/common';
-
+import { ForumComponent } from './forum/forum.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -23,7 +23,8 @@ import { CommonModule } from '@angular/common';
     AceptarTerminosComponent,
     QuienessomosComponent,
     LoginComponent,
-    RestablecerContrasenaComponent
+    RestablecerContrasenaComponent,
+    ForumComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrección aquí

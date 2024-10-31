@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 interface Pregunta {
   titulo: string;
@@ -9,6 +11,8 @@ interface Pregunta {
 
 @Component({
   selector: 'app-forum',
+  standalone: true,
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './forum.component.html',
   styleUrls: ['./forum.component.css']
 })
