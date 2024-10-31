@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Mis Boletas de Pago</h1>
+  <div class="boleta-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Fecha</th>
+          <th>Descripción</th>
+          <th>Archivo</th>
+          <th>Monto</th>
+          <th>Estado</th>
+          <th>Accion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let boleta of boletas">
+          <td>{{ boleta.numero }}</td>
+          <td>{{ boleta.fecha }}</td>
+          <td>{{ boleta.descripcion }}</td>
+          <td>{{ boleta.archivo }}</td>
+          <td>{{ boleta.monto | currency: '$' }}</td>
+          <td class="estado" [ngClass]="{'pendiente': boleta.estado === 'Pendiente', 'pagado': boleta.estado === 'Pagado'}">
+            {{ boleta.estado }}
+          </td>
+          <td>
+            <button (click)="descargarBoleta(boleta.archivo)">Descargar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
