@@ -7,6 +7,7 @@ import { QuienesSOmos01Component } from './QuienesSomos/quienes-somos01/quienes-
 import { HomePageComponent } from './shared/home-page/home-page.component';
 import { HistorialDePagosComponent } from './historialDePagos/historialDePagos.component'; // Ruta relativa correcta
 import { RegistroComponent } from './registro/registro.component';
+import { GraficoConsumoComponent } from './grafico-consumo/grafico-consumo.component';
 
 // Exportamos las rutas
 export const routes: Routes = [
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: 'dash', component: DashBoardComponent },
   { path: 'historialDePagos', component: HistorialDePagosComponent },
   { path: 'aceptar-terminos', component: AceptarTerminosComponent },
+  { path: 'grafico-consumo', component: GraficoConsumoComponent },
 ];
 
 @NgModule({

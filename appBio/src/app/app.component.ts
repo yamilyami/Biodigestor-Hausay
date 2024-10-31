@@ -10,13 +10,14 @@ import { AceptarTerminosComponent } from "./aceptar-terminos/aceptar-terminos.co
 import { RestablecerContrasenaComponent } from './restablecer-contrasena/restablecer-contrasena.component';
 import { DashBoardComponent } from './Dash/dash-board/dash-board.component';
 import { LoginComponent } from "./login/login.component";
+import { GraficoConsumoComponent } from './grafico-consumo/grafico-consumo.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NadvarComponent, HomePageComponent,
             FooterComponent, LoginComponent, RestablecerContrasenaComponent,
-            RegistroComponent, ReactiveFormsModule, DashBoardComponent, AceptarTerminosComponent, CommonModule],
+            RegistroComponent, ReactiveFormsModule, DashBoardComponent, AceptarTerminosComponent, GraficoConsumoComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
