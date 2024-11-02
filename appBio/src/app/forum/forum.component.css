@@ -1,103 +1,52 @@
-/* Estilos generales */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-}
-
-h1, h2 {
-  color: #343a40;
+  background-image: url('../../assets/image/con_lamparita.jpeg'); /* Ruta ajustada */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Asegúrate de que el body tenga altura */
+  margin: 0; /* Elimina márgenes del body */
+  color: #333; /* Color del texto */
+  font-family: Arial, sans-serif; /* Tipografía más amigable */
 }
 
 .container {
-  max-width: 800px;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 20px; /* Espacio en la parte superior */
 }
 
-/* Estilos para el formulario */
-.form-group label {
-  font-weight: bold;
-  color: #495057;
+h1, h2, h3 {
+  color: #388e3c; /* Verde oscuro para los encabezados */
+}
+
+.btn-primary {
+  background-color: #43a047; /* Verde más intenso para botones */
+  border-color: #388e3c; /* Color del borde del botón */
+}
+
+.btn-primary:hover {
+  background-color: #66bb6a; /* Verde más claro al pasar el mouse */
+}
+
+.pregunta, .respuesta {
+  background-color: #f1f8e9; /* Fondo suave verde claro para preguntas y respuestas */
+  border: 1px solid #c8e6c9; /* Borde verde claro */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre preguntas y respuestas */
 }
 
 .form-control {
-  border-radius: 0.25rem;
-  border: 1px solid #ced4da;
-  padding: 10px;
+  border: 1px solid #c8e6c9; /* Borde verde claro para inputs */
+  border-radius: 4px; /* Bordes redondeados */
 }
 
-textarea.form-control {
-  height: 80px;
+.form-control:focus {
+  border-color: #43a047; /* Borde verde más intenso al enfocar */
+  box-shadow: 0 0 5px rgba(67, 160, 71, 0.5); /* Sombra verde al enfocar */
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: #0056b3;
-}
 
-/* Estilos para las preguntas */
-h2 {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  color: #007bff;
-}
-
-.pregunta {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.pregunta p {
-  font-size: 1rem;
-  color: #6c757d;
-}
-
-/* Estilos para las respuestas */
-ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-ul li {
-  background-color: #e9ecef;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  color: #333;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Caja de respuesta */
-textarea {
-  resize: none;
-}
-
-/* Separador para preguntas */
-.pregunta:not(:first-child) {
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
-}
-
-/* Estilos para el texto de las respuestas */
-ul li p {
-  margin: 0;
-}

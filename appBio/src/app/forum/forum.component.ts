@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 interface Pregunta {
   titulo: string;
   pregunta: string;
-  respuestas: string[];
+  respuestas: { usuario: string; respuesta: string }[]; // Cambiamos a un objeto que incluya usuario y respuesta
+  usuario: string; // Añadimos el usuario
 }
 
 @Component({
@@ -21,8 +23,7 @@ export class ForumComponent implements OnInit {
   formularioRespuesta: FormGroup;
   preguntas: Pregunta[] = [];
 
-  constructor(private fb: FormBuilder) {
-    // Inicializamos los formularios
+  constructor(private fb: FormBuilder, private router: Router) {
     this.formulario = this.fb.group({
       titulo: ['', Validators.required],
       pregunta: ['', Validators.required]
@@ -40,7 +41,8 @@ export class ForumComponent implements OnInit {
       const nuevaPregunta: Pregunta = {
         titulo: this.formulario.get('titulo')?.value || '',
         pregunta: this.formulario.get('pregunta')?.value || '',
-        respuestas: []
+        respuestas: [],
+        usuario: 'Mariano Oliva' // Usuario fijo para la pregunta
       };
       this.preguntas.push(nuevaPregunta);
       this.formulario.reset();
@@ -52,10 +54,16 @@ export class ForumComponent implements OnInit {
   enviarRespuesta(pregunta: Pregunta) {
     if (this.formularioRespuesta.valid) {
       const respuesta = this.formularioRespuesta.get('respuesta')?.value || '';
-      pregunta.respuestas.push(respuesta);
+      pregunta.respuestas.push({ usuario: 'Admin', respuesta }); // Usuario fijo para la respuesta
       this.formularioRespuesta.reset();
     } else {
       alert('Por favor, ingrese una respuesta.');
     }
   }
+
+  volverAtras(): void {
+    this.router.navigate(['../']);
+  }
 }
+
+

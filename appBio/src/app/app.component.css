@@ -1,0 +1,18 @@
+.navbar {
+    position: fixed; /* Mantenerla en la parte inferior */
+    bottom: 0; /* Asegura que esté en la parte inferior de la pantalla */
+    left: 0; /* Alinea el navbar a la izquierda */
+    width: 100%; /* El navbar ocupa todo el ancho de la pantalla */
+    background-color: rgba(255, 0, 0, 0.8); /* Color de fondo del navbar */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno del navbar */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  
+  
+  .content {
+    padding-bottom: 50px; /* Espacio para evitar que el contenido quede oculto tras el navbar */
+  }
+  

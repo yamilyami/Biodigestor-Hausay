@@ -4,14 +4,12 @@ import { ForumComponent } from './forum.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [],
-  
+  declarations: [ForumComponent], 
   imports: [
-    ReactiveFormsModule,
-    ForumComponent,
-    CommonModule
-    // ... otros imports
-  ]
-  
+    CommonModule,
+    ReactiveFormsModule
+   
+  ],
+  exports: [ForumComponent] 
 })
-export class ForumModule { } 
+export class ForumModule { }

@@ -1,77 +1,108 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Color de fondo suave */
+    background-color: #f0f0f0;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    margin: 0; /* Quita el margen por defecto */
+    flex-direction: column; /* Cambiar a dirección de columna para organizar el contenido */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Permite el posicionamiento relativo del navbar */
 }
 
 .login-form {
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 30px; /* Espaciado interno */
-    width: 100%; /* Ancho del contenedor */
-    max-width: 400px; /* Ancho máximo del formulario */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: auto; /* Permitir que el formulario suba al centro */
 }
 
 .form-group {
-    margin-bottom: 15px; /* Espacio entre los elementos del formulario */
+    margin-bottom: 15px;
 }
 
 label {
-    color: #000000; /* Color negro para las etiquetas */
-    font-size: 1rem; /* Tamaño de fuente */
-    display: block; /* Hace que la etiqueta ocupe toda la línea */
-    font-weight: bold; /* Aumenta el peso de la fuente */
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 
-.form-text {
-    color: #000; /* Asegura que el texto sea negro */
-    font-weight: bold; /* Aumenta el peso de la fuente */
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.terms-checkbox input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 .form-control {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    padding: 10px; /* Espaciado interno */
-    margin-top: 5px; /* Espacio entre la etiqueta y el input */
-    border: 1px solid #ccc; /* Borde gris claro */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
-    transition: border-color 0.3s; /* Transición suave para el borde */
-}
-
-.form-control:focus {
-    border-color: #28a745; /* Color del borde al enfocar */
-    outline: none; /* Quita el contorno por defecto */
-}
-
-#aceptar-terminos {
-    margin-right: 10px; /* Espacio entre la casilla y la etiqueta */
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .btn {
-    background-color: #28a745; /* Color del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: 1rem; /* Tamaño de fuente */
-    transition: background-color 0.3s; /* Transición suave para el botón */
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #218838; /* Color del botón al pasar el mouse */
+    background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
+/* Estilos para el navbar */
+.navbar {
+    position: absolute; /* Cambiar a posición absoluta para que se mantenga en la parte inferior */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+    background-color: #343a40; /* Color de fondo del navbar */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    color: white; /* Color de texto */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para los enlaces del navbar */
+.navbar a {
+    color: #ffffff; /* Color del texto */
+    font-weight: bold;
+    margin: 0 1rem; /* Margen entre enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+@media (max-width: 390px) {
     .login-form {
-        padding: 20px; /* Ajusta el espaciado en pantallas más pequeñas */
+        padding: 15px;
+    }
+    label {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
+
+
+
+
+
 
 
 

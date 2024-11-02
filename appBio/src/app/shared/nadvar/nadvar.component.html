@@ -1,25 +1,25 @@
-
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-
     <a class="navbar-brand" routerLink="">
       <img src="/loBio.JPG" alt="logo de loBio" width="50" height="50">
     </a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+        <a class="nav-link" routerLink="/terminos-y-condiciones">Términos y Condiciones</a>
         <a class="nav-link" href="#">Sobre el Proyecto</a>
-        <a class="nav-link" href="#">Quiénes somos</a>
-        <a class="nav-link" href="#">Preguntas frecuentes</a>
+        <a class="nav-link" routerLink="/QuienesSomos">Quiénes somos</a>
+        <a routerLink="/forum" class="nav-link">Foro</a>
         <a class="nav-link" href="#">Contacto</a>
-        <a class="nav-link" href="#">Registrarse</a>
-        <a class="nav-link" href="#">Ingresar</a>
+        <a class="nav-link" routerLink="/formularioRegistro">Registrarse</a>
+        <a class="nav-link" routerLink="/ingresar">Ingresar</a> <!-- Asegúrate de que la ruta para ingresar esté correctamente definida -->
       </div>
     </div>
   </div>
 </nav>
+
+
+

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CommonModule } from '@angular/common'; // Asegúrate de importar CommonModule
 import { QuienessomosComponent } from './quienessomos.component';
 
 describe('QuienessomosComponent', () => {
@@ -8,9 +8,9 @@ describe('QuienessomosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuienessomosComponent]
-    })
-    .compileComponents();
+      declarations: [QuienessomosComponent], // Debe estar en declaraciones
+      imports: [CommonModule] // Asegúrate de incluir cualquier módulo que necesites
+    }).compileComponents();
 
     fixture = TestBed.createComponent(QuienessomosComponent);
     component = fixture.componentInstance;
@@ -21,3 +21,4 @@ describe('QuienessomosComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

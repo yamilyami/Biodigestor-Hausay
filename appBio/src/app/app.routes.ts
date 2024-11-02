@@ -1,27 +1,27 @@
-import { NgModule } from '@angular/core';// Asegúrate de incluir esta línea
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Registro01Component } from './registro01/registro01/registro01.component';
 import { QuienesSOmos01Component } from './QuienesSomos/quienes-somos01/quienes-somos01.component';
 import { HomePageComponent } from './shared/home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { ForumComponent } from './forum/forum.component';
-import { CommonModule } from '@angular/common';
-// Exportamos las rutas
+import { AceptarTerminosComponent } from './aceptar-terminos/aceptar-terminos.component';
+
 export const routes: Routes = [
-  { path: '', component: HomePageComponent },  // Ruta por defecto
+  { path: 'forum', component: ForumComponent },
+  { path: '', component: HomePageComponent },
   { path: 'homePrincipal', component: HomePageComponent },
   { path: 'formularioRegistro', component: Registro01Component },
   { path: 'registro', component: Registro01Component },
   { path: 'QuienesSomos', component: QuienesSOmos01Component },
   { path: 'ingresar', component: LoginComponent },
   { path: 'inicio', component: HomePageComponent },
-  { path: 'forum', component: ForumComponent },
-  { path: 'common', component: CommonModule },
-  { path: '**', redirectTo: '' }  // Ruta para redireccionar si no encuentra una ruta
+  { path: 'terminos-y-condiciones', component: AceptarTerminosComponent }, // Asegúrate de usar el nombre correcto
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],  // Configura el router
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

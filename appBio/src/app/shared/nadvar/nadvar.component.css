@@ -1,19 +1,51 @@
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  position: fixed; /* Mantenerla en la parte inferior */
+  bottom: 0; /* Asegura que esté en la parte inferior de la pantalla */
+  left: 0; /* Asegura que esté alineada a la izquierda */
+  z-index: 999; /* Asegura que esté sobre otros elementos */
+  background-color: #343a40; /* Color de fondo */
+  padding: 1rem; /* Espaciado interno */
+  width: 100%; /* Ocupa todo el ancho */
+}
+
+/* No es necesario ajustar el margen superior del body */
+body {
+  /* padding-top: 70px; */ /* Puedes eliminar esta línea */
+}
+
+.navbar-nav {
+  display: flex; /* Alinear los enlaces en fila */
+  flex-wrap: wrap; /* Permitir que se ajusten en múltiples líneas */
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-left: .8rem;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37);
+  color: #ffffff; /* Color del texto */
+  font-size: 1.1rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Negrita */
+  margin-left: .8rem; /* Espacio a la izquierda */
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.37); /* Sombra de texto */
+  padding: 10px; /* Espacio interno */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #159215;
+  color: #159215; /* Color al pasar el mouse */
 }
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: row; /* Mantener en fila en pantallas pequeñas */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: .5rem; /* Ajustar el margen entre los enlaces */
+    margin-bottom: 0; /* Eliminar margen inferior */
+    padding: 8px 12px; /* Ajustar espaciado interno */
+  }
+}
+
+
 
 

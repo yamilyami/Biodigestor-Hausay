@@ -1,6 +1,6 @@
 /* Fondo completo con la imagen */
 .login-container {
-  background-image: url('/hero.jpg'); /* Ruta a tu imagen de fondo */
+  background-image: url('/assets/hero.jpg'); /* Ruta correcta a la imagen en assets */
   background-size: cover;
   background-position: center;
   height: 100vh;
