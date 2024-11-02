@@ -19,7 +19,7 @@
         {{ respuesta }}
       </li>
     </ul>
-    <form [formGroup]="formularioRespuesta" (ngSubmit)="enviarRespuesta(pregunta)">//aca va pregunta.id//
+    <form [formGroup]="formularioRespuesta" (ngSubmit)="enviarRespuesta(pregunta)">
       <div class="form-group">
         <textarea formControlName="respuesta" class="form-control"></textarea>
       </div>

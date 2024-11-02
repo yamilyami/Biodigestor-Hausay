@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  background-color: #f5f7fa;
+  color: #333;
 }
 
 h1, h2 {
@@ -9,7 +10,12 @@ h1, h2 {
 }
 
 .container {
-  margin-top: 50px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 /* Estilos para el formulario */
@@ -25,7 +31,7 @@ h1, h2 {
 }
 
 textarea.form-control {
-  height: 100px;
+  height: 80px;
 }
 
 button {
@@ -34,8 +40,10 @@ button {
   border: none;
   padding: 10px 20px;
   border-radius: 0.25rem;
+  font-weight: bold;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -49,7 +57,15 @@ h2 {
   color: #007bff;
 }
 
-p {
+.pregunta {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pregunta p {
   font-size: 1rem;
   color: #6c757d;
 }
@@ -58,16 +74,30 @@ p {
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 ul li {
   background-color: #e9ecef;
   padding: 10px;
-  border-radius: 0.25rem;
+  border-radius: 8px;
   margin-bottom: 10px;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Caja de respuesta */
 textarea {
   resize: none;
+}
+
+/* Separador para preguntas */
+.pregunta:not(:first-child) {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+/* Estilos para el texto de las respuestas */
+ul li p {
+  margin: 0;
 }
