@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ForumComponent } from './forum.component';
+import { CommonModule } from '@angular/common';
 
 describe('ForumComponent', () => {
   let component: ForumComponent;

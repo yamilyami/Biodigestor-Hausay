@@ -24,7 +24,9 @@ import { ForumComponent } from './forum/forum.component';
     QuienessomosComponent,
     LoginComponent,
     RestablecerContrasenaComponent,
-    ForumComponent
+    ForumComponent,
+    CommonModule,
+    FormsModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']  // Corrección aquí

@@ -5,7 +5,7 @@ import { QuienesSOmos01Component } from './QuienesSomos/quienes-somos01/quienes-
 import { HomePageComponent } from './shared/home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { ForumComponent } from './forum/forum.component';
-
+import { CommonModule } from '@angular/common';
 // Exportamos las rutas
 export const routes: Routes = [
   { path: '', component: HomePageComponent },  // Ruta por defecto
@@ -16,6 +16,7 @@ export const routes: Routes = [
   { path: 'ingresar', component: LoginComponent },
   { path: 'inicio', component: HomePageComponent },
   { path: 'forum', component: ForumComponent },
+  { path: 'common', component: CommonModule },
   { path: '**', redirectTo: '' }  // Ruta para redireccionar si no encuentra una ruta
 ];
 

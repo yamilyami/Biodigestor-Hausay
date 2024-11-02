@@ -11,15 +11,15 @@
     </div>
     <button type="submit">Enviar</button>
   </form> 
-  <div *NgFor="let pregunta of preguntas">
+  <div *ngFor="let pregunta of preguntas">
     <h2>{{ pregunta.titulo }}</h2>
     <p>{{ pregunta.pregunta }}</p>
     <ul>
-      <li *NgFor="let respuesta of pregunta.respuestas">
+      <li *ngFor="let respuesta of pregunta.respuestas">
         {{ respuesta }}
       </li>
     </ul>
-    <form [formGroup]="formularioRespuesta" (ngSubmit)="enviarRespuesta(pregunta.id)">
+    <form [formGroup]="formularioRespuesta" (ngSubmit)="enviarRespuesta(pregunta)">//aca va pregunta.id//
       <div class="form-group">
         <textarea formControlName="respuesta" class="form-control"></textarea>
       </div>
