@@ -1,0 +1,33 @@
+.consumo-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.consumo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.consumo-table th,
+.consumo-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.consumo-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.no-consumo {
+    margin-top: 20px;
+    color: #777;
+}

@@ -1,0 +1,20 @@
+<div class="consumo-container">
+    <h2>Historial de Consumo de Gas</h2>
+    <table class="consumo-table">
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Volumen de Gas (m³)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of historialConsumo">
+                <td>{{ item.mes }}</td>
+                <td>{{ item.volumenGas.toFixed(2) }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div *ngIf="historialConsumo.length === 0" class="no-consumo">
+        <p>No hay datos de consumo disponibles.</p>
+    </div>
+</div>
